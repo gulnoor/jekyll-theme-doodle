@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dark-blog-theme"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.5"
   spec.authors       = ["Gul Noor"]
   spec.email         = ["gulnoor5233@gmail.com"]
 
@@ -12,5 +12,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
-  # spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "jekyll", "~> 4.3"
 end
