@@ -11,13 +11,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "darkBlog"
+gem "dark-theme-blog"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: darkBlog
+theme: dark-theme-blog
 ```
 
 And then execute:

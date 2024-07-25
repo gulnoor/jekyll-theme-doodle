@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "darkBlog"
-  spec.version       = "0.1.1"
+  spec.name          = "dark-blog-theme"
+  spec.version       = "0.1.3"
   spec.authors       = ["Gul Noor"]
   spec.email         = ["gulnoor5233@gmail.com"]
 
