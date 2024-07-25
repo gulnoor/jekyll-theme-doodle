@@ -5,3 +5,5 @@
 _site
 Gemfile.lock
 _drafts
+darkBlog.code-workspace
+.vscode
