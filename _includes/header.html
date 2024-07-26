@@ -2,8 +2,8 @@
   <div class="wrapper header-container">
     {%- assign default_paths = site.pages | map: 'path' -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <img class="logo" src="{{- "assets/theme-assets/theme-images/logo.svg" | relative_url -}}">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <img class="logo" src="{{- "assets/theme-assets/theme-images/logo.svg" | relative_url -}}">
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger">
