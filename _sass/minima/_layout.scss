@@ -33,7 +33,6 @@
   @include media-query($on-palm) {
     font-size: 38px;
     padding-right: 43px;
-
   }
 
   &,
@@ -47,6 +46,7 @@
   border-radius: 999px;
 }
 .theme-input {
+  visibility: hidden;
   // transform: translate(9999px,9999px);
   height: 0px;
   width: 0px;
