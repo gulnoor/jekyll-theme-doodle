@@ -174,11 +174,11 @@ figure {
   --md-sys-color-surface-container-high: rgb(47 40 45);
   --md-sys-color-surface-container-highest: rgb(58 51 56);
 }
-.logo{
+.logo {
   height: 150px;
   padding-right: 10%;
 }
-.header-container{
+.header-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +186,7 @@ figure {
 }
 @font-face {
   font-family: Virgil;
-  src: url("/assets/fonts/Virgil.woff2");
+  src: url("/theme-assets/theme-fonts/Virgil.woff2");
 }
 /**
  * Basic styling

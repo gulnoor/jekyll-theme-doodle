@@ -7,4 +7,5 @@ Gemfile.lock
 _drafts
 darkBlog.code-workspace
 .vscode
-assets
+assets/images/*
+_posts
