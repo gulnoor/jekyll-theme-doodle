@@ -29,7 +29,7 @@ $ bundle
 - Add this your \_config.yml file.
 
 ```yml
-remote_theme: "gulnoor/dark-theme-blog"
+remote_theme: "gulnoor/jekyll-blog-theme"
 ```
 
 - Remove any other theme: or remote_theme: entry.
