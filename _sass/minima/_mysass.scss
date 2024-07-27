@@ -1,0 +1,38 @@
+.theme-picker {
+  display: flex;
+  // width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 15px;
+  margin-top: 4px;
+  justify-content: flex-end;
+}
+
+.post-card {
+  // border: 1px solid var(--md-sys-color-outline);
+  //   overflow: visible;
+  position: relative;
+  //   padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 12px;
+  background-color: var(--md-sys-color-surface-container);
+}
+
+.post-card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  right: -10px;
+  bottom: -10px;
+  // width: calc(100% + 12px);
+  // height: calc(100% + 12px);
+  z-index: 999;
+  background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
+  background-size: 100% 100%;
+  filter: var(--outline-filter);
+  pointer-events: none; /* Allows interaction with content inside the border */
+}

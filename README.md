@@ -1,6 +1,7 @@
-# Jekyll Dark Theme for Blogs
+# Dark Theme for Jekyll Blogs
 
-|                         |                         |
+Minimalistic dark theme for [Jekyll](https://jekyllrb.com/) blogs with 5 different color schemes.
+| | |
 | ----------------------- | ----------------------- |
 | ![GitHub](/etc/ss1.png) | ![GitHub](/etc/ss2.png) |
 
@@ -63,6 +64,12 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+
+### TODO
+
+- [ ] Grid layout for posts on home page
+- [ ] Add support for comments
+- [ ] Search functionality
 
 ## Contributing
 

@@ -12,14 +12,14 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: 'Featured Posts' }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-        <li class="post-card">
+        <li class="post-card custom-border">
           {%- if post.image -%}
             <img class="post-image" src="{{- post.image | relative_url -}}">
           {%- endif -%}
           <a class="post-link" href="{{ post.url | relative_url }}">
             {%- assign date_format = site.minima.date_format | default: '%b %-d, %Y' -%}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
+            <h3 class="card-title">
               {{ post.title | escape }}
             </h3>
             <span class="post-excerpt">{{ post.excerpt }}</span>
