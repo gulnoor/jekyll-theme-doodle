@@ -59,7 +59,7 @@
     display: none;
   }
   .trigger {
-    display: flex;
+    display: none;
     justify-content: center;
 
     border-radius: 999px;
@@ -213,13 +213,23 @@
   @include relative-font-size(2);
 }
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
+// .post-list-heading {
+//   @include relative-font-size(1.75);
+// }
 
-.post-list {
+.pinned-post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 12px;
   margin-left: 0;
   list-style: none;
+  background-color: var(--md-sys-color-surface-container);
+  border-radius: 24px;
+  padding: 24px;
+  @media screen and (max-width: 850px) {
+    // background-color: var(--md-sys-color-secondary-container);
+  }
 
   > li {
     margin-bottom: $spacing-unit;
