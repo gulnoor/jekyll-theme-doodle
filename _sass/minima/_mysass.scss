@@ -30,9 +30,97 @@
   bottom: -10px;
   // width: calc(100% + 12px);
   // height: calc(100% + 12px);
-  z-index: 999;
+  z-index: 10;
   background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
   background-size: 100% 100%;
   filter: var(--outline-filter);
   pointer-events: none; /* Allows interaction with content inside the border */
+}
+.navrail {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--md-sys-color-surface-container);
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 100px;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+.navrail-button {
+  padding: 12px 0 12px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--md-sys-color-on-surface);
+}
+// .navrail-button::before {
+//   content: "";
+//   position: absolute;
+//   height: 20px;
+//   width: 20px;
+//   background-color: aqua;
+//   top: -20px;
+//   z-index: 99;
+//   right: 0px;
+// }
+
+// .navrail-button::after {
+//   content: "";
+//   position: absolute;
+//   height: 20px;
+//   width: 20px;
+//   background-color: aqua;
+//   bottom: -20px;
+//   z-index: 999;
+//   right: 0px;
+// }
+.navrail-icon {
+  filter: var(--outline-filter);
+}
+
+.theme-selector {
+  position: relative;
+  display: flex;
+//   width: 100%;
+  justify-content: flex-end;
+  padding: 12px;
+  padding-top: 18px;
+}
+
+.current-theme {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color:var(--current-color); /* Initial theme color */
+  margin-left: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.theme-options {
+//   position: absolute;
+    display: flex;
+//   top: 50%;
+//   right: 20px;
+//   transform: translate(-50%, -50%);
+//   display: none;
+  //   flex-wrap: wrap;
+  gap: 10px;
+  max-width: 0px;
+  transition: all 0.3s ;
+}
+
+.theme-option {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
 }

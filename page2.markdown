@@ -1,6 +1,0 @@
----
-layout: page
-title: Page2
-permalink: /Page2/
----
-
