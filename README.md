@@ -1,10 +1,14 @@
 # Jekyll Dark Theme for Blogs
 
+|                         |                         |
+| ----------------------- | ----------------------- |
+| ![GitHub](/etc/ss1.png) | ![GitHub](/etc/ss2.png) |
+
 ## Installation
 
-if you are using github pages, the recommended method is `remote-themes`:
+if you are using github pages, the recommended method is following:
 
-- Add following lines to your Gemfile:
+- Add following lines to your `Gemfile`:
 
 ```ruby
 source "https://rubygems.org"
@@ -13,20 +17,20 @@ gem "github-pages", "~> 231", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 ```
 
-- Add jekyll-include-cache to the plugins array of your \_config.yml.
+- Add jekyll-include-cache to the plugins array of your `_config.yml`
 
 ```yaml
 plugins:
   - jekyll-include-cache
 ```
 
-- And then execute:
+- And then execute this command in shell:
 
 ```bash
 $ bundle
 ```
 
-- Add this your \_config.yml file.
+- Add this your `_config.yml` file.
 
 ```yml
 remote_theme: "gulnoor/jekyll-blog-theme"
@@ -63,7 +67,6 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/gulnoor/darkBlog
-
 
 ## License
 

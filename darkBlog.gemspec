@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "dark-blog-theme"
-  spec.version       = "2.0.1"
+  spec.version       = "2.1.0"
   spec.authors       = ["Gul Noor"]
   spec.email         = ["gulnoor5233@gmail.com"]
 

@@ -173,7 +173,6 @@ figure {
   --md-sys-color-surface-container-high: rgb(37 43 42);
   --md-sys-color-surface-container-highest: rgb(47 54 53);
 }
-
 .dark-green {
   --md-sys-color-primary: rgb(177 209 138);
   --md-sys-color-surface-tint: rgb(177 209 138);
@@ -225,7 +224,6 @@ figure {
   --md-sys-color-surface-container-high: rgb(40 43 36);
   --md-sys-color-surface-container-highest: rgb(51 54 46);
 }
-
 .dark-pink {
   --md-sys-color-primary: rgb(240 179 231);
   --md-sys-color-surface-tint: rgb(240 179 231);
@@ -277,14 +275,16 @@ figure {
   --md-sys-color-surface-container-high: rgb(47 40 45);
   --md-sys-color-surface-container-highest: rgb(58 51 56);
 }
+
 .logo {
-  height: 150px;
-  // padding-right: 10%;
+  height: 120px;
+  @include media-query($on-palm){
+    height: 90px;
+  }
 }
 .header-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 @font-face {
