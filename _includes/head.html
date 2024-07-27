@@ -9,7 +9,7 @@
     type="font/woff2"
     crossorigin
   >
-  {%- seo -%}
+  {% comment %} {%- seo -%} {% endcomment %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <script>
     const colors = {
@@ -31,7 +31,7 @@
     }
   </script>
   <script src="/assets/theme-assets/js/theme.js" defer></script>
-  {%- feed_meta -%}
+  {% comment %} {%- feed_meta -%} {% endcomment %}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
