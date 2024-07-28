@@ -1,6 +1,5 @@
 .theme-picker {
   display: flex;
-  // width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 15px;
@@ -8,29 +7,32 @@
   justify-content: flex-end;
 }
 .all-post-wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 .post-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(200px, auto);
   margin-left: 0;
   list-style: none;
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+  // > li {
+  // margin-bottom: $spacing-unit/2;
+  // }
 }
 .post-card {
-  // border: 1px solid var(--md-sys-color-outline);
-  //   overflow: visible;
   position: relative;
-  //   padding: 20px;
+  grid-column: auto / span 2;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border-radius: 14px;
-  padding: 12px;
-  background-color: var(--md-sys-color-surface-container);
+  padding: 20px;
+  border: 1px solid var(--md-sys-color-outline);
   & p {
     display: -webkit-box;
     line-clamp: 3;
@@ -38,26 +40,27 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  @media screen and (max-width: 1200px) {
+    grid-column: auto/span 3;
+  }
+  @media screen and (max-width: 800px) {
+    grid-column: auto/span 6;
+  }
 }
 .pinned-post-card {
-  // border: 1px solid var(--md-sys-color-outline);
-  //   overflow: visible;
   position: relative;
-  //   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   border-radius: 14px;
   padding: 12px;
   width: 30%;
-  background-color: var(--md-sys-color-surface-container);
   background-color: var(--md-sys-color-primary-container);
   & p,
   span,
   a {
     color: var(--md-sys-color-on-primary-container);
   }
-
   & img {
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 24px;
@@ -77,35 +80,18 @@
   }
 }
 
-// .post-card::before {
-//   content: "";
-//   position: absolute;
-//   top: -10px;
-//   left: -12px;
-//   right: -10px;
-//   bottom: -10px;
-//   // width: calc(100% + 12px);
-//   // height: calc(100% + 12px);
-//   z-index: 10;
-//   background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
-//   background-size: 100% 100%;
-//   filter: var(--outline-filter);
-//   pointer-events: none; /* Allows interaction with content inside the border */
-// }
 .pinned-post-list {
   display: flex;
-  width: fit-content;
+  margin-left: 0;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 12px;
-  margin-left: 0;
   list-style: none;
   background-color: var(--md-sys-color-surface-container);
   border-radius: 24px;
   padding: $spacing-unit;
   min-height: 390px;
   @media screen and (max-width: 850px) {
-    // background-color: var(--md-sys-color-secondary-container);
     padding: $spacing-unit/2;
     min-height: 200px;
   }
@@ -135,12 +121,16 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   z-index: 99;
-  padding: 80px 0 30px 12px;
+  padding: 30px 8px 30px 16px;
+  box-sizing: border-box;
   width: 100px;
   background-color: var(--md-sys-color-surface);
+  @media screen and (min-width: 1360px) {
+    width: 130px;
+  }
 
   @include media-query($on-palm) {
     flex-direction: row;
@@ -245,4 +235,24 @@ h1 {
 .tagline {
   font-family: "Comic Shanns", $base-font-family;
   text-align: center;
+  font-size: 1.2rem;
+}
+.home {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divider-path{
+  stroke: var(--md-sys-color-outline);
+  stroke-width: 2;
+}
+.divider-svg{
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  @include media-query($on-palm){
+
+
+  }
 }
