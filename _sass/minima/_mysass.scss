@@ -133,7 +133,7 @@
   color: var(--md-sys-color-on-surface);
 }
 .navrail-icon {
-  filter: var(--outline-filter);
+  // filter: var(--outline-filter);
   max-width: 40px;
 }
 
@@ -190,9 +190,11 @@
 .pin-svg {
   position: absolute;
   height: 80px;
-  top: -35px;
-  right: -40px;
+  width: auto;
+  top: -34px;
+  right: 15px;
   z-index: 11;
+
   // filter: var(--outline-filter);
 }
 .pin-path {
