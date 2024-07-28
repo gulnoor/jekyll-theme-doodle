@@ -1,6 +1,6 @@
 # Dark Theme for Jekyll Blogs
 
-Minimalistic dark theme for [Jekyll](https://jekyllrb.com/) blogs with 5 different color schemes.
+Dark theme for [Jekyll](https://jekyllrb.com/) blogs with handwriting fonts and 5 color schemes.
 | | |
 | ----------------------- | ----------------------- |
 | ![GitHub](/etc/ss1.png) | ![GitHub](/etc/ss2.png) |
@@ -34,7 +34,7 @@ $ bundle
 - Add this your `_config.yml` file.
 
 ```yml
-remote_theme: "gulnoor/jekyll-blog-theme"
+remote_theme: "gulnoor/jekyll-theme-handwritten"
 ```
 
 - Remove any other theme: or remote_theme: entry.
@@ -44,13 +44,13 @@ remote_theme: "gulnoor/jekyll-blog-theme"
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "dark-theme-blog"
+gem "jekyll-theme-handwritten"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: dark-theme-blog
+theme: jekyll-theme-handwritten
 ```
 
 And then execute:
@@ -59,7 +59,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install darkBlog
+    $ gem install jekyll-theme-handwritten
 
 ## Usage
 
@@ -67,7 +67,6 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ### TODO
 
-- [ ] Grid layout for posts on home page
 - [ ] Add support for comments
 - [ ] Search functionality
 
