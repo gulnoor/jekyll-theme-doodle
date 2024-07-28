@@ -105,7 +105,21 @@
   width: 100px;
 
   @include media-query($on-palm) {
-    display: none;
+    flex-direction: row;
+    bottom: 0;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--md-sys-color-surface-container-highest);
+    padding: 0px;
+    box-shadow: 0px -4px 16px 0px var(--md-sys-color-shadow);
+    .navrail-icon {
+      max-height: 34px;
+      max-width: max-content;
+      object-fit: cover;
+    }
+    .navrail-button {
+      padding: 8px 0 8px 0;
+    }
   }
 }
 .navrail-button {
@@ -118,27 +132,6 @@
   align-items: center;
   color: var(--md-sys-color-on-surface);
 }
-// .navrail-button::before {
-//   content: "";
-//   position: absolute;
-//   height: 20px;
-//   width: 20px;
-//   background-color: aqua;
-//   top: -20px;
-//   z-index: 99;
-//   right: 0px;
-// }
-
-// .navrail-button::after {
-//   content: "";
-//   position: absolute;
-//   height: 20px;
-//   width: 20px;
-//   background-color: aqua;
-//   bottom: -20px;
-//   z-index: 999;
-//   right: 0px;
-// }
 .navrail-icon {
   filter: var(--outline-filter);
   max-width: 40px;
@@ -208,4 +201,8 @@
 }
 h1 {
   font-family: "Comic Shanns", $base-font-family;
+}
+.tagline {
+  font-family: "Comic Shanns", $base-font-family;
+  text-align: center;
 }
