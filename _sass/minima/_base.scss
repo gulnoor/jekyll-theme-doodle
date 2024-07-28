@@ -45,7 +45,8 @@ figure {
   --md-sys-color-surface-variant: rgb(75 71 57);
   --md-sys-color-on-surface-variant: rgb(205 198 180);
   --md-sys-color-outline: #969080;
-  --outline-filter: brightness(0) saturate(100%) invert(64%) sepia(15%) saturate(306%) hue-rotate(6deg) brightness(87%) contrast(85%);
+  --outline-filter: brightness(0) saturate(100%) invert(64%) sepia(15%)
+    saturate(306%) hue-rotate(6deg) brightness(87%) contrast(85%);
   --md-sys-color-outline-variant: rgb(75 71 57);
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
@@ -97,7 +98,8 @@ figure {
   --md-sys-color-surface-variant: rgb(68 71 78);
   --md-sys-color-on-surface-variant: rgb(196 198 208);
   --md-sys-color-outline: #8e9099;
-  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(5%) saturate(424%) hue-rotate(192deg) brightness(92%) contrast(92%);
+  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(5%)
+    saturate(424%) hue-rotate(192deg) brightness(92%) contrast(92%);
   --md-sys-color-outline-variant: #44474e;
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
@@ -149,7 +151,8 @@ figure {
   --md-sys-color-surface-variant: rgb(63 73 71);
   --md-sys-color-on-surface-variant: rgb(190 201 198);
   --md-sys-color-outline: #899391;
-  --outline-filter: brightness(0) saturate(100%) invert(66%) sepia(8%) saturate(263%) hue-rotate(118deg) brightness(85%) contrast(87%);
+  --outline-filter: brightness(0) saturate(100%) invert(66%) sepia(8%)
+    saturate(263%) hue-rotate(118deg) brightness(85%) contrast(87%);
   --md-sys-color-outline-variant: rgb(63 73 71);
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
@@ -201,7 +204,8 @@ figure {
   --md-sys-color-surface-variant: rgb(68 72 61);
   --md-sys-color-on-surface-variant: rgb(197 200 186);
   --md-sys-color-outline: #8f9285;
-  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(6%) saturate(487%) hue-rotate(33deg) brightness(92%) contrast(91%);
+  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(6%)
+    saturate(487%) hue-rotate(33deg) brightness(92%) contrast(91%);
   --md-sys-color-outline-variant: rgb(68 72 61);
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
@@ -253,7 +257,8 @@ figure {
   --md-sys-color-surface-variant: rgb(78 68 75);
   --md-sys-color-on-surface-variant: rgb(209 195 203);
   --md-sys-color-outline: #9a8d95;
-  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(13%) saturate(228%) hue-rotate(270deg) brightness(93%) contrast(82%);
+  --outline-filter: brightness(0) saturate(100%) invert(61%) sepia(13%)
+    saturate(228%) hue-rotate(270deg) brightness(93%) contrast(82%);
   --md-sys-color-outline-variant: rgb(78 68 75);
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
@@ -477,7 +482,7 @@ pre {
     padding-right: $spacing-unit / 2;
     padding-left: ($spacing-unit / 2)+100;
   }
-  @include media-query($on-palm){
+  @include media-query($on-palm) {
     padding-left: $spacing-unit/2;
   }
 }

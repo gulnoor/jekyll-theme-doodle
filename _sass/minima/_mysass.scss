@@ -31,6 +31,13 @@
   border-radius: 14px;
   padding: 12px;
   background-color: var(--md-sys-color-surface-container);
+  & p {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 .pinned-post-card {
   // border: 1px solid var(--md-sys-color-outline);
@@ -49,6 +56,13 @@
   span,
   a {
     color: var(--md-sys-color-on-primary-container);
+  }
+  & p {
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   & img {
     background-color: var(--md-sys-color-surface-container-high);
@@ -103,6 +117,7 @@
   z-index: 99;
   padding: 80px 0 30px 12px;
   width: 100px;
+  background-color: var(--md-sys-color-surface);
 
   @include media-query($on-palm) {
     flex-direction: row;
