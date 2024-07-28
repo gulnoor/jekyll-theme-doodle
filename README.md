@@ -72,7 +72,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/gulnoor/darkBlog
+Bug reports and pull requests are welcome on GitHub at https://github.com/gulnoor/jekyll-theme-handwritten
 
 ## License
 
