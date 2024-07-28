@@ -45,13 +45,14 @@
   width: 30%;
   background-color: var(--md-sys-color-surface-container);
   background-color: var(--md-sys-color-primary-container);
-  & p,span,a {
+  & p,
+  span,
+  a {
     color: var(--md-sys-color-on-primary-container);
   }
-  & img{
+  & img {
     background-color: var(--md-sys-color-surface-container-high);
     border-radius: 24px;
-
   }
   @media screen and (max-width: 1300px) {
     width: 46%;
@@ -61,21 +62,21 @@
   }
 }
 
-.post-card::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -12px;
-  right: -10px;
-  bottom: -10px;
-  // width: calc(100% + 12px);
-  // height: calc(100% + 12px);
-  z-index: 10;
-  background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
-  background-size: 100% 100%;
-  filter: var(--outline-filter);
-  pointer-events: none; /* Allows interaction with content inside the border */
-}
+// .post-card::before {
+//   content: "";
+//   position: absolute;
+//   top: -10px;
+//   left: -12px;
+//   right: -10px;
+//   bottom: -10px;
+//   // width: calc(100% + 12px);
+//   // height: calc(100% + 12px);
+//   z-index: 10;
+//   background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
+//   background-size: 100% 100%;
+//   filter: var(--outline-filter);
+//   pointer-events: none; /* Allows interaction with content inside the border */
+// }
 .pinned-post-card::before {
   content: "";
   position: absolute;
@@ -92,6 +93,7 @@
   pointer-events: none; /* Allows interaction with content inside the border */
 }
 .navrail {
+  font-family: "Comic Shanns", $base-font-family;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -139,6 +141,7 @@
 // }
 .navrail-icon {
   filter: var(--outline-filter);
+  max-width: 40px;
 }
 
 .theme-selector {
@@ -190,4 +193,19 @@
   @include media-query($on-palm) {
     padding-left: $spacing-unit/2;
   }
+}
+.pin-svg {
+  position: absolute;
+  height: 80px;
+  top: -35px;
+  right: -40px;
+  z-index: 11;
+  // filter: var(--outline-filter);
+}
+.pin-path {
+  stroke: var(--md-sys-color-tertiary);
+  stroke-width: 2.5;
+}
+h1 {
+  font-family: "Comic Shanns", $base-font-family;
 }

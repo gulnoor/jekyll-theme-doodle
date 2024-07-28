@@ -1,21 +1,7 @@
 {%- if page_paths -%}
   <nav class="navrail">
-    {% comment %}
-      <input type="checkbox" id="nav-trigger" class="nav-trigger">
-      <label for="nav-trigger">
-        <span class="menu-icon">
-          <img
-            src="
-              {{- "assets/theme-assets/theme-images/menu.svg" | relative_url
-              -}}
-            "
-            alt="menu-icon"
-          >
-        </span>
-      </label>
-    {% endcomment %}
     <a class="navrail-button" href="/">
-      <img class="navrail-icon" src="/assets/theme-assets/theme-icons/home.svg">
+      <img class="navrail-icon" src="{{- site.home_icon | relative_url -}}">
       Home</a
     >
 

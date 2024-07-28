@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
-icon: /assets/theme-assets/theme-icons/info.svg
+icon: /assets/theme-assets/theme-icons/aboutme.svg
 ---

@@ -20,6 +20,7 @@
 show_excerpts: true
 title: Awesome Title
 email: your-email@example.com
+tagline: My Awesome Tagline
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -28,7 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
-
+home_icon: /assets/theme-assets/theme-icons/home2.svg
 # Build settings
 plugins:
   - jekyll-feed
