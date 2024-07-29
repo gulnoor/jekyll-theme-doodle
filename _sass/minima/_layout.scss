@@ -4,10 +4,14 @@
 
 .site-header {
   border-top: 5px solid var(--md-sys-color-outline-dark);
+ 
   // border-bottom: 1px solid var(--md-sys-color-outline);
   min-height: $spacing-unit * 1.865;
   // Positioning context for the mobile navigation icon
   position: relative;
+  @media screen and (min-width:601px) {
+    padding-top: 24px;
+  }
 }
 
 .site-title {

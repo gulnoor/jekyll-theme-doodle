@@ -19,10 +19,6 @@
   grid-auto-rows: minmax(200px, auto);
   margin-left: 0;
   list-style: none;
-
-  // > li {
-  // margin-bottom: $spacing-unit/2;
-  // }
 }
 .post-card {
   position: relative;
@@ -107,8 +103,6 @@
   left: -12px;
   right: -10px;
   bottom: -10px;
-  // width: calc(100% + 12px);
-  // height: calc(100% + 12px);
   z-index: 10;
   background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
   background-size: 100% 100%;
@@ -121,7 +115,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 99;
   padding: 30px 8px 30px 16px;
@@ -161,17 +155,27 @@
   color: var(--md-sys-color-on-surface);
 }
 .navrail-icon {
-  // filter: var(--outline-filter);
   max-width: 40px;
 }
 
 .theme-selector {
   position: relative;
   display: flex;
-  //   width: 100%;
   justify-content: flex-end;
-  padding: 12px;
-  padding-top: 18px;
+  margin-left: auto;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 99px;
+  background-color: rgba(70, 70, 70, 0.233);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  @media screen and (min-width: 601px) {
+    position: fixed;
+    z-index: 103;
+    bottom: 10px;
+    left: 30px;
+  }
 }
 
 .current-theme {
@@ -183,20 +187,12 @@
   cursor: pointer;
   transition: transform 0.3s;
 }
-
 .theme-options {
-  //   position: absolute;
   display: flex;
-  //   top: 50%;
-  //   right: 20px;
-  //   transform: translate(-50%, -50%);
-  //   display: none;
-  //   flex-wrap: wrap;
   gap: 10px;
   max-width: 0px;
   transition: all 0.3s;
 }
-
 .theme-option {
   width: 26px;
   height: 26px;
@@ -222,8 +218,6 @@
   top: -34px;
   right: 15px;
   z-index: 11;
-
-  // filter: var(--outline-filter);
 }
 .pin-path {
   stroke: var(--md-sys-color-tertiary);
@@ -242,17 +236,15 @@ h1 {
   margin-left: auto;
   margin-right: auto;
 }
-.divider-path{
+.divider-path {
   stroke: var(--md-sys-color-outline);
   stroke-width: 2;
 }
-.divider-svg{
+.divider-svg {
   width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  @include media-query($on-palm){
-
-
+  @include media-query($on-palm) {
   }
 }
