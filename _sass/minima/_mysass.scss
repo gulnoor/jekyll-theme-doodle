@@ -51,6 +51,8 @@
   border-radius: 14px;
   padding: 12px;
   width: 30%;
+  transform-origin: top right;
+  animation: pin 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color: var(--md-sys-color-primary-container);
   & p,
   span,
@@ -131,7 +133,7 @@
     bottom: 0;
     width: 100vw;
     height: fit-content;
-    background-color: var(--md-sys-color-surface-container-highest);
+    background-color: var(--md-sys-color-surface-container);
     padding: 0px;
     box-shadow: 0px -4px 16px 0px var(--md-sys-color-shadow);
     .navrail-icon {
@@ -247,4 +249,38 @@ h1 {
   margin-right: auto;
   @include media-query($on-palm) {
   }
+}
+@keyframes pin {
+  0% {
+    transform: rotate(-35deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes mainreveal {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+main {
+  overflow: hidden;
+  animation: mainreveal 0.25s;
 }

@@ -87,6 +87,7 @@
     top: 12px;
     left: 12px;
     background-color: var(--md-sys-color-surface-container);
+    backdrop-filter: blur(8px);
     border-radius: 8px;
     text-align: right;
     padding-bottom: 3px;

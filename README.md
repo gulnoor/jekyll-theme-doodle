@@ -63,6 +63,17 @@ Or install it yourself as:
 
 ## Usage
 
+To pin a post add `status: pinned` to the front matter of the post markdown file e.g
+
+```yaml
+---
+layout: post
+title: "Welcome to Jekyll!"
+status: pinned
+---
+<!-- post content -->
+```
+
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ### TODO
