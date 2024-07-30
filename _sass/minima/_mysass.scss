@@ -105,7 +105,6 @@
   left: -12px;
   right: -10px;
   bottom: -10px;
-  z-index: 10;
   background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
   background-size: 100% 100%;
   filter: var(--outline-filter);
@@ -123,7 +122,7 @@
   padding: 30px 8px 30px 16px;
   box-sizing: border-box;
   width: 100px;
-  background-color: var(--md-sys-color-surface);
+  // background-color: var(--md-sys-color-surface);
   @media screen and (min-width: 1360px) {
     width: 130px;
   }
@@ -133,7 +132,7 @@
     bottom: 0;
     width: 100vw;
     height: fit-content;
-    background-color: var(--md-sys-color-surface-container);
+    background-color: var(--md-sys-color-surface-container-high);
     padding: 0px;
     box-shadow: 0px -4px 16px 0px var(--md-sys-color-shadow);
     .navrail-icon {

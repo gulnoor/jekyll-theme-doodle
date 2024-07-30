@@ -3,15 +3,9 @@
  */
 
 .site-header {
-  border-top: 5px solid var(--md-sys-color-outline-dark);
- 
-  // border-bottom: 1px solid var(--md-sys-color-outline);
   min-height: $spacing-unit * 1.865;
-  // Positioning context for the mobile navigation icon
   position: relative;
-  @media screen and (min-width:601px) {
-    padding-top: 24px;
-  }
+
 }
 
 .site-title {
@@ -21,18 +15,11 @@
   text-align: center;
   letter-spacing: -1px;
   margin-bottom: 0;
-  // margin-top: 12px;
   font-size: 64px;
-  padding-right: 0;
-  // float: left;
+  padding: 24px;
 
   @include media-query($on-palm) {
     font-size: 46px;
-  }
-
-  &,
-  &:visited {
-    // color: $grey-color-dark;
   }
 }
 
@@ -52,7 +39,6 @@
   background-color: #81d5cd;
 }
 .site-nav {
-  // float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -65,18 +51,14 @@
   .trigger {
     display: none;
     justify-content: center;
-
     border-radius: 999px;
   }
   .page-link {
     color: var(--md-sys-color-on-surface);
     min-width: 60px;
     text-align: center;
-    // border: 2px solid var(--md-sys-color-outline);
     border-radius: 999px;
     padding: 0 20px 0 20px;
-    // line-height: $base-line-height;
-    // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -142,10 +124,9 @@
  * Site footer
  */
 .site-footer {
-  // border-top: 1px solid var(--md-sys-color-outline);
   padding: $spacing-unit 0;
-  @include media-query($on-palm){
-    padding-bottom: 100px
+  @include media-query($on-palm) {
+    padding-bottom: 100px;
   }
 }
 
@@ -221,12 +202,6 @@
   @include relative-font-size(2);
 }
 
-// .post-list-heading {
-//   @include relative-font-size(1.75);
-// }
-
-
-
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
@@ -247,7 +222,6 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
-  // font-family: Virgil;
 }
 
 /**
@@ -295,4 +269,3 @@
     }
   }
 }
-
