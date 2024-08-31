@@ -1,9 +1,9 @@
 .highlight {
-  background: #2d2d2d;
+  background: var(--md-sys-color-surface-container-high);
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #3d3d3d;
+  background: var(--md-sys-color-surface-container-high);
   }
 
   .c     { color: #999; font-style: italic } // Comment

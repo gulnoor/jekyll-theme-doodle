@@ -283,7 +283,7 @@ figure {
   --md-sys-color-surface-container-lowest: rgb(18 13 17);
   --md-sys-color-surface-container-low: rgb(32 26 30);
   --md-sys-color-surface-container: rgb(36 30 34);
-  --md-sys-color-surface-container-high: rgb(47 40 45);
+  --md-sys-color-surface-container-high: #2f282d;
   --md-sys-color-surface-container-highest: rgb(58 51 56);
 }
 
@@ -299,12 +299,16 @@ figure {
   flex-direction: column;
 }
 @font-face {
-  font-family: Virgil;
-  src: url("/assets/theme-assets/theme-fonts/Virgil.woff2");
+  font-family: "Excalifont";
+  src: url("/assets/theme-assets/theme-fonts/Excalifont-Regular.woff2");
 }
 @font-face {
   font-family: "Comic Shanns";
   src: url("/assets/theme-assets/theme-fonts/comic\ shanns.otf");
+}
+@font-face {
+  font-family: "Lexend";
+  src: url("/assets/theme-assets/theme-fonts/Lexend-Regular.ttf");
 }
 /**
  * Basic styling
@@ -427,9 +431,11 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: var(--md-sys-color-primary);
+  border-left: 3px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
+  margin-left: 12px;
+  margin-right: 12px;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;

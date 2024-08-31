@@ -10,7 +10,7 @@
 
 .site-title {
   @include relative-font-size(1.625);
-  font-family: Virgil;
+  font-family: Excalifont;
   font-weight: 300;
   text-align: center;
   letter-spacing: -1px;
@@ -235,7 +235,7 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-  margin: 24px;
+  margin: 20px;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -244,6 +244,12 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  // text-align: justify;
+  p{
+  text-align: justify;
+
+  }
+
 
   h2 {
     @include relative-font-size(2);
