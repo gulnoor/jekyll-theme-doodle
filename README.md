@@ -1,4 +1,4 @@
-# Dark Theme for Jekyll Blogs
+# Jekyll Theme Doodle: for a playful and creative aesthetic
 
 Dark theme for [Jekyll](https://jekyllrb.com/) blogs with handwriting fonts and 5 color schemes.
 
@@ -36,7 +36,7 @@ $ bundle
 - Add this your `_config.yml` file.
 
 ```yml
-remote_theme: "gulnoor/jekyll-theme-handwritten"
+remote_theme: "gulnoor/jekyll-theme-doodle"
 ```
 
 - Remove any other theme: or remote_theme: entry.
@@ -46,13 +46,13 @@ remote_theme: "gulnoor/jekyll-theme-handwritten"
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-theme-handwritten"
+gem "jekyll-theme-doodle"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-handwritten
+theme: jekyll-theme-doodle
 ```
 
 And then execute:
@@ -61,7 +61,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jekyll-theme-handwritten
+    $ gem install jekyll-theme-doodle
 
 ## Usage
 
@@ -85,7 +85,7 @@ TODO: Write usage instructions here. Describe your available layouts, includes, 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/gulnoor/jekyll-theme-handwritten
+Bug reports and pull requests are welcome on GitHub at https://github.com/gulnoor/jekyll-theme-doodle
 
 ## License
 

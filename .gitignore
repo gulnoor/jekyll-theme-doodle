@@ -10,3 +10,5 @@ darkBlog.code-workspace
 assets/images/*
 assets/fonts/*
 Page2.md
+_posts
+.obsidian

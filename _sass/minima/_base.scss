@@ -525,7 +525,12 @@ pre {
 /**
  * Tables
  */
+
 table {
+  // display: block;
+  overflow-x: auto;
+  // white-space: nowrap;
+  max-width: 100%;
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;

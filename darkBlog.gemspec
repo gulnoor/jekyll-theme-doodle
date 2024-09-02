@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-handwritten"
-  spec.version       = "4.3.4"
+  spec.name          = "jekyll-theme-doodle"
+  spec.version       = "4.4.0"
   spec.authors       = ["Gul Noor"]
   spec.email         = ["gulnoor5233@gmail.com"]
 
