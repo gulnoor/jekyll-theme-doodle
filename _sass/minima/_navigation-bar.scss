@@ -1,0 +1,128 @@
+.site-nav {
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .trigger {
+    display: none;
+    justify-content: center;
+    border-radius: 999px;
+  }
+  .page-link {
+    color: var(--md-sys-color-on-surface);
+    min-width: 60px;
+    text-align: center;
+    border-radius: 999px;
+    padding: 0 20px 0 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--md-sys-color-surface-container);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    text-align: right;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    label[for="nav-trigger"] {
+      display: block;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        fill: $grey-color-dark;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+.navrail {
+  font-family: "Comic Shanns", $base-font-family;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 99;
+  padding: 30px 8px 30px 16px;
+  box-sizing: border-box;
+  width: 100px;
+  @media screen and (min-width: 1360px) {
+    width: 130px;
+  }
+
+  @include media-query($on-palm) {
+    flex-direction: row;
+    bottom: 0;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--md-sys-color-surface-container);
+    padding: 0px;
+    box-shadow: 0px -4px 16px 0px var(--md-sys-color-shadow);
+    .navrail-icon {
+      max-height: 34px;
+      max-width: max-content;
+      object-fit: cover;
+    }
+    .navrail-button {
+      padding: 8px 0 8px 0;
+    }
+  }
+}
+.navrail-button {
+  padding: 12px 0 12px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--md-sys-color-on-surface);
+}
+.navrail-icon {
+  max-width: 40px;
+}

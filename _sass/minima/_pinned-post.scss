@@ -1,0 +1,99 @@
+@keyframes pin {
+  0% {
+    transform: rotate(-35deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.pinned-post-card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 12px;
+  width: 30%;
+  transform-origin: top right;
+  animation: pin 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: var(--md-sys-color-primary-container);
+  & p,
+  span,
+  a {
+    color: var(--md-sys-color-on-primary-container);
+  }
+  & img {
+    background-color: var(--md-sys-color-surface-container-high);
+    border-radius: 24px;
+  }
+  @media screen and (max-width: 1300px) {
+    width: 46%;
+  }
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    & p {
+      display: -webkit-box;
+      line-clamp: 5;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.pinned-post-list {
+  display: flex;
+  margin-left: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 12px;
+  list-style: none;
+  background-color: var(--md-sys-color-surface-container);
+  border-radius: 24px;
+  padding: $spacing-unit;
+  min-height: 390px;
+  @media screen and (max-width: 850px) {
+    padding: $spacing-unit/2;
+    min-height: 200px;
+  }
+
+  > li:not(:last-child) {
+    margin-bottom: $spacing-unit;
+  }
+}
+.pinned-post-card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  right: -10px;
+  bottom: -10px;
+  background-image: url("/assets/theme-assets/theme-images/border-thick.svg");
+  background-size: 100% 100%;
+  filter: var(--outline-filter);
+  pointer-events: none; /* Allows interaction with content inside the border */
+}
+.pin-svg {
+  position: absolute;
+  height: 80px;
+  width: auto;
+  top: -34px;
+  right: 15px;
+  z-index: 11;
+}
+.pin-path {
+  stroke: var(--md-sys-color-tertiary);
+  stroke-width: 2.5;
+}

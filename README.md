@@ -57,13 +57,19 @@ theme: jekyll-theme-doodle
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install jekyll-theme-doodle
+```bash
+$ gem install jekyll-theme-doodle
+```
 
 ## Usage
+
+### Pin a post
 
 To pin a post add `status: pinned` to the front matter of the post markdown file e.g
 
@@ -76,10 +82,19 @@ status: pinned
 <!-- post content -->
 ```
 
+### Add tagline in header
+
+To add a tagline/description below the site title, add a tagline property to \_config.yml
+
+```yaml
+tagline: "Your awesome tagline"
+```
+
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ### TODO
 
+- [ ] Analytics support
 - [ ] Add support for comments
 - [ ] Search functionality
 

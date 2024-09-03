@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Gul Noor"]
   spec.email         = ["gulnoor5233@gmail.com"]
 
-  spec.summary       = "Modern Dark theme for blogs"
+  spec.summary       = "Dark theme for a playful and creative aesthetic"
   spec.homepage      = "https://github.com/gulnoor/jekyll-theme-handwritten"
   spec.license       = "MIT"
 

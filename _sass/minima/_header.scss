@@ -1,0 +1,29 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.site-header {
+  min-height: $spacing-unit * 1.865;
+  position: relative;
+}
+
+.site-title {
+  @include relative-font-size(1.625);
+  font-family: Excalifont;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  font-size: 64px;
+  padding: 24px;
+
+  @include media-query($on-palm) {
+    font-size: 46px;
+  }
+}
+.tagline {
+    font-family: "Comic Shanns", $base-font-family;
+    text-align: center;
+    font-size: 1.2rem;
+  }

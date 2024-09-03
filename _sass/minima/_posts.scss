@@ -1,0 +1,107 @@
+.all-post-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+.post-image {
+  height: 200px;
+  width: 100%;
+}
+.featured-image {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.post-excerpt {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 20px;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+  // text-align: justify;
+  p {
+    text-align: justify;
+  }
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(200px, auto);
+  margin-left: 0;
+  list-style: none;
+}
+.post-card {
+  position: relative;
+  grid-column: auto / span 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid var(--md-sys-color-outline);
+  & p {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 1200px) {
+    grid-column: auto/span 3;
+  }
+  @media screen and (max-width: 800px) {
+    grid-column: auto/span 6;
+  }
+}
+.card-title {
+  font-family: "Comic Shanns", $base-font-family;
+}

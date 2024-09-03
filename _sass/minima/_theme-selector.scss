@@ -1,0 +1,41 @@
+.theme-selector {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 99px;
+  background-color: rgba(70, 70, 70, 0.233);
+  backdrop-filter: blur(8px);
+  width: fit-content;
+  @media screen and (min-width: 601px) {
+    position: fixed;
+    z-index: 103;
+    bottom: 10px;
+    left: 30px;
+  }
+}
+
+.current-theme {
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: var(--current-color); /* Initial theme color */
+  margin-left: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.theme-options {
+  display: flex;
+  gap: 10px;
+  max-width: 0px;
+  transition: all 0.3s;
+}
+.theme-option {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+}
