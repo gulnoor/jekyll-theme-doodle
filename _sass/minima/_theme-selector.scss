@@ -1,5 +1,7 @@
 .theme-selector {
-  position: relative;
+  display: flex;
+}
+.theme-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
@@ -7,17 +9,21 @@
   margin-top: 8px;
   margin-right: 8px;
   border-radius: 99px;
-  background-color: rgba(70, 70, 70, 0.233);
+  background-color: rgba(159, 159, 159, 0.122);
   backdrop-filter: blur(8px);
   width: fit-content;
   @media screen and (min-width: 601px) {
     position: fixed;
     z-index: 103;
     bottom: 10px;
-    left: 30px;
+    left: 9px;
   }
 }
-
+.night-mode-button {
+  border-radius: 999px;
+  border: none;
+  background-color: var(--md-sys-color-surface-container-highest);
+}
 .current-theme {
   height: 26px;
   width: 26px;

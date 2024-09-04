@@ -29,7 +29,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height}
     $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  background-color: var(--md-sys-color-surface-container);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -150,7 +150,6 @@ blockquote {
   margin-right: 12px;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
-  font-style: italic;
 
   > :last-child {
     margin-bottom: 0;
@@ -187,8 +186,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2) + 48px);
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2) + 48px);
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -241,13 +240,16 @@ pre {
 table {
   display: block;
   overflow-x: auto;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   margin-bottom: $spacing-unit;
-  width: 100%;
   text-align: $table-text-align;
   color: var(--md-sys-color-on-surface);
   border-collapse: collapse;
   border: 1px solid var(--md-sys-color-outline);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
   tr {
     &:nth-child(even) {
       background-color: var(--md-sys-color-surface-container-high);
@@ -263,7 +265,7 @@ table {
     // border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
-    border: 1px solid var(--md-sys-color-outline);
+    border-top: 1px solid var(--md-sys-color-outline);
   }
 }
 
