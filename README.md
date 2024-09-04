@@ -1,6 +1,25 @@
-# Jekyll Theme Doodle: for a playful and creative aesthetic
+# Doodle: A [Jekyll](https://jekyllrb.com/) theme for playful and creative aesthetic
 
-Dark theme for [Jekyll](https://jekyllrb.com/) blogs with handwriting fonts and 5 color schemes.
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+  - [remote-themes](#remote-themes)
+  - [Alternate Method](#alternate-method)
+- [Usage](#usage)
+  - [Pin a post](#pin-a-post)
+  - [Add tagline in header](#add-tagline-in-header)
+  - [Google analytics](#google-analytics)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- dark mode
+- 5 color schemes
+- pinned posts
+- handwriting fonts
+- google analytics support
 
 You can preview the theme [here](https://gulnoor.github.io)
 | | |
@@ -8,6 +27,8 @@ You can preview the theme [here](https://gulnoor.github.io)
 | ![GitHub](/etc/ss1.png) | ![GitHub](/etc/ss2.png) |
 
 ## Installation
+
+### remote-themes
 
 if you are using github pages, the recommended method is following:
 
@@ -92,9 +113,16 @@ tagline: "Your awesome tagline"
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
-### TODO
+### Google analytics
 
-- [ ] Analytics support
+add your google analytics tracking id to \_config.yml
+
+```yaml
+google_analytics: UA-NNNNNNNN-N
+```
+
+## TODO
+
 - [ ] Add support for comments
 - [ ] Search functionality
 
