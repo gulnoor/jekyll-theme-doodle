@@ -19,12 +19,31 @@
       : themeOptions.style.maxWidth === "0px"
       ? "800px"
       : "0px";
+    // themeOptions.style.marginRight = themeOptions.style.maxWidth !== "0px" ? "20px" : "0px";
+    themeOptions.style.paddingTop =
+      themeOptions.style.maxWidth !== "0px" ? "50px" : "0px";
+    // currentTheme.style.display =
+    //   currentTheme.style.display !== "none" ? "none" : "block";
   });
 
   document.querySelectorAll(".theme-option").forEach((option) => {
     option.addEventListener("click", clickHandler(option.dataset.themeClass));
   });
-  document.querySelector(".night-mode-button").addEventListener("click", () => {
+  // document.querySelector(".night-mode-button").addEventListener("click", () => {
+  //   let activeMode = root.className;
+  //   if (activeMode.startsWith("dark")) {
+  //     activeMode = root.className.replace("dark", "light");
+  //   } else {
+  //     activeMode = root.className.replace("light", "dark");
+  //   }
+  //   root.className = activeMode;
+  //   window.localStorage.setItem("theme", activeMode);
+  // });
+
+  const darkModeToggle = document.getElementById("darkModeToggle");
+
+  darkModeToggle.checked = theme.startsWith("dark") ? true : false;
+  darkModeToggle.addEventListener("change", () => {
     let activeMode = root.className;
     if (activeMode.startsWith("dark")) {
       activeMode = root.className.replace("dark", "light");

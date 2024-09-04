@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 99;
   padding: 30px 8px 30px 16px;
@@ -125,8 +125,8 @@
 }
 .navrail-icon {
   max-width: 40px;
-  filter: var(--on-suface-filter);
+  filter: var(--on-surface-filter);
 }
 .menu-icon {
-  filter: var(--on-suface-filter);
+  filter: var(--on-surface-filter);
 }

@@ -104,7 +104,7 @@
   --md-sys-color-on-background: rgb(226 226 233);
   --md-sys-color-surface: rgb(17 19 24);
   --md-sys-color-on-surface: #e2e2e9;
-  --on-suface-filter: invert(100%) sepia(5%) saturate(7075%) hue-rotate(180deg)
+  --on-surface-filter: invert(100%) sepia(5%) saturate(7075%) hue-rotate(180deg)
     brightness(96%) contrast(89%);
   --md-sys-color-surface-variant: rgb(68 71 78);
   --md-sys-color-on-surface-variant: rgb(196 198 208);
@@ -159,7 +159,8 @@
   --md-sys-color-on-background: rgb(221 228 226);
   --md-sys-color-surface: rgb(14 21 20);
   --md-sys-color-on-surface: #dde4e2;
-  --on-surface-filter: invert(91%) sepia(6%) saturate(145%) hue-rotate(112deg) brightness(102%) contrast(89%);
+  --on-surface-filter: invert(91%) sepia(6%) saturate(145%) hue-rotate(112deg)
+    brightness(102%) contrast(89%);
   --md-sys-color-surface-variant: rgb(63 73 71);
   --md-sys-color-on-surface-variant: rgb(190 201 198);
   --md-sys-color-outline: #899391;
@@ -214,7 +215,8 @@
   --md-sys-color-on-background: rgb(226 227 216);
   --md-sys-color-surface: rgb(18 20 14);
   --md-sys-color-on-surface: #e2e3d8;
-  --on-surface-filter: invert(85%) sepia(3%) saturate(447%) hue-rotate(26deg) brightness(109%) contrast(89%);
+  --on-surface-filter: invert(85%) sepia(3%) saturate(447%) hue-rotate(26deg)
+    brightness(109%) contrast(89%);
   --md-sys-color-surface-variant: rgb(68 72 61);
   --md-sys-color-on-surface-variant: rgb(197 200 186);
   --md-sys-color-outline: #8f9285;
@@ -270,7 +272,8 @@
   --md-sys-color-on-background: rgb(235 223 230);
   --md-sys-color-surface: rgb(23 18 22);
   --md-sys-color-on-surface: #ebdfe6;
-  --on-surface-filter: invert(84%) sepia(5%) saturate(320%) hue-rotate(272deg) brightness(109%) contrast(91%);
+  --on-surface-filter: invert(97%) sepia(3%) saturate(932%) hue-rotate(287deg)
+    brightness(92%) contrast(100%);
   --md-sys-color-surface-variant: rgb(78 68 75);
   --md-sys-color-on-surface-variant: rgb(209 195 203);
   --md-sys-color-outline: #9a8d95;
@@ -280,7 +283,8 @@
   --md-sys-color-shadow: rgb(0 0 0);
   --md-sys-color-scrim: rgb(0 0 0);
   --md-sys-color-inverse-surface: rgb(235 223 230);
-  --md-sys-color-inverse-on-surface: rgb(53 46 51);
+  --md-sys-color-inverse-on-surface: #352e33;
+
   --md-sys-color-inverse-primary: rgb(127 77 123);
   --md-sys-color-primary-fixed: rgb(255 215 247);
   --md-sys-color-on-primary-fixed: rgb(51 8 51);
@@ -323,7 +327,9 @@
   --md-sys-color-background: rgb(255 247 249);
   --md-sys-color-on-background: rgb(32 26 30);
   --md-sys-color-surface: rgb(255 247 249);
-  --md-sys-color-on-surface: rgb(32 26 30);
+  --md-sys-color-on-surface: #201a1e;
+  --on-surface-filter: invert(8%) sepia(2%) saturate(3908%) hue-rotate(267deg)
+    brightness(94%) contrast(93%);
   --md-sys-color-surface-variant: rgb(238 222 231);
   --md-sys-color-on-surface-variant: rgb(78 68 75);
   --md-sys-color-outline: rgb(127 116 124);
@@ -376,7 +382,9 @@
   --md-sys-color-background: rgb(249 250 239);
   --md-sys-color-on-background: rgb(26 28 22);
   --md-sys-color-surface: rgb(249 250 239);
-  --md-sys-color-on-surface: rgb(26 28 22);
+  --md-sys-color-on-surface: #1a1c16;
+  --on-surface-filter: invert(9%) sepia(11%) saturate(780%) hue-rotate(39deg)
+    brightness(96%) contrast(95%);
   --md-sys-color-surface-variant: rgb(225 228 213);
   --md-sys-color-on-surface-variant: rgb(68 72 61);
   --md-sys-color-outline: rgb(117 121 108);
@@ -429,7 +437,9 @@
   --md-sys-color-background: rgb(255 249 238);
   --md-sys-color-on-background: rgb(30 27 19);
   --md-sys-color-surface: rgb(255 249 238);
-  --md-sys-color-on-surface: rgb(30 27 19);
+  --md-sys-color-on-surface: #1e1b13;
+  --on-surface-filter: invert(8%) sepia(20%) saturate(701%) hue-rotate(6deg)
+    brightness(101%) contrast(95%);
   --md-sys-color-surface-variant: rgb(234 226 208);
   --md-sys-color-on-surface-variant: rgb(75 71 57);
   --md-sys-color-outline: rgb(124 119 103);
@@ -482,7 +492,9 @@
   --md-sys-color-background: rgb(249 249 255);
   --md-sys-color-on-background: rgb(25 28 32);
   --md-sys-color-surface: rgb(249 249 255);
-  --md-sys-color-on-surface: rgb(25 28 32);
+  --md-sys-color-on-surface: #191c20;
+  --on-surface-filter: invert(7%) sepia(25%) saturate(417%) hue-rotate(174deg)
+    brightness(93%) contrast(91%);
   --md-sys-color-surface-variant: rgb(224 226 236);
   --md-sys-color-on-surface-variant: rgb(68 71 78);
   --md-sys-color-outline: rgb(116 119 127);
@@ -535,7 +547,9 @@
   --md-sys-color-background: rgb(244 251 249);
   --md-sys-color-on-background: rgb(22 29 28);
   --md-sys-color-surface: rgb(244 251 249);
-  --md-sys-color-on-surface: rgb(22 29 28);
+  --md-sys-color-on-surface: #161d1c;
+  --on-surface-filter: invert(7%) sepia(7%) saturate(1616%) hue-rotate(122deg)
+    brightness(92%) contrast(90%);
   --md-sys-color-surface-variant: rgb(218 229 226);
   --md-sys-color-on-surface-variant: rgb(63 73 71);
   --md-sys-color-outline: rgb(111 121 119);
