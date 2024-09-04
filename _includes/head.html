@@ -1,44 +1,51 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link
     rel="preload"
     href="/assets/theme-assets/theme-fonts/Excalifont-Regular.woff2"
     as="font"
     type="font/ttf"
     crossorigin
-  />
+  >
   <link
     rel="preload"
     href="/assets/theme-assets/theme-fonts/comic shanns.otf"
     as="font"
     type="font/otf"
     crossorigin
-  />
-  {%- seo -%} <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url
-  }}">
+  >
+  {%- seo -%}
+  <link
+    rel="stylesheet"
+    href="
+      {{ "/assets/main.css" | relative_url
+      }}
+    "
+  >
   <script>
     const colors = {
-      "dark-pink": "#f0b3e7",
-      "dark-green": "#b1d18a",
-      "dark-yellow": "#dbc66e",
-      "dark-blue": "#aac7ff",
-      "dark-cyan": "#81d5cd",
+      'dark-pink': '#f0b3e7',
+      'dark-green': '#b1d18a',
+      'dark-yellow': '#dbc66e',
+      'dark-blue': '#aac7ff',
+      'dark-cyan': '#81d5cd',
     };
-    const root = document.querySelector("html");
-    const theme = window.localStorage.getItem("theme");
+    const root = document.querySelector('html');
+    const theme = window.localStorage.getItem('theme');
     if (theme === null) {
-      window.localStorage.setItem("theme", "dark-pink");
-      root.className = "dark-pink";
-      root.style.setProperty("--current-color", colors["dark-pink"]);
+      window.localStorage.setItem('theme', 'dark-pink');
+      root.className = 'dark-pink';
+      root.style.setProperty('--current-color', colors['dark-pink']);
     } else {
       root.className = theme;
-      root.style.setProperty("--current-color", colors[theme]);
+      root.style.setProperty('--current-color', colors[theme]);
     }
   </script>
   <script src="/assets/theme-assets/js/theme.js" defer></script>
-  {% comment %} {%- feed_meta -%} {% endcomment %} {%- if jekyll.environment ==
-  'production' and site.google_analytics -%} {%- include google-analytics.html
-  -%} {%- endif -%}
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
 </head>
