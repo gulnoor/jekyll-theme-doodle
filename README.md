@@ -10,6 +10,7 @@
   - [Pin a post](#pin-a-post)
   - [Add tagline in header](#add-tagline-in-header)
   - [Google analytics](#google-analytics)
+  - [Adding icons to naviagtion links](#adding-icons-to-naviagtion-links)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -62,7 +63,7 @@ remote_theme: "gulnoor/jekyll-theme-doodle"
 
 - Remove any other theme: or remote_theme: entry.
 
-## Alternate Method
+### Alternate Method
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -119,6 +120,17 @@ add your google analytics tracking id to \_config.yml
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N
+```
+### Adding icons to naviagtion links
+add the icon path to the page front matter e.g
+
+```yaml
+---
+layout: page
+title: "About"
+permalink: /about/
+icon: "/assets/icons/about.svg"
+---
 ```
 
 ## TODO
