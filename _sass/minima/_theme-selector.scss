@@ -3,6 +3,8 @@
 }
 .theme-wrapper {
   display: flex;
+  position: absolute;
+  right: 0;
   justify-content: flex-end;
   align-items: flex-start;
   margin-left: auto;
@@ -17,13 +19,14 @@
     position: fixed;
     z-index: 103;
     bottom: 10px;
+    right: auto;
     left: 9px;
   }
 }
 
 .current-theme {
-  height: 26px;
-  width: 26px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   background-color: var(--current-color); /* Initial theme color */
   margin-right: 10px;
@@ -72,15 +75,17 @@
 }
 .slider:before {
   position: absolute;
-  content: "";
+  content: url("/assets/theme-assets/theme-icons/sun.svg");
   height: 20px;
   width: 20px;
   left: 2px;
   bottom: 2px;
-  background-color: var(--md-sys-color-on-primary);
+  background-color: var(--md-sys-color-surface-container-highest);
   transition: 0.4s;
   border-radius: 50%;
 }
 input:checked + .slider:before {
   transform: translateX(20px);
+  content: url("/assets/theme-assets/theme-icons/moon.svg");
+
 }
