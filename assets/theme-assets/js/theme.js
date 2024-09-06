@@ -1,6 +1,5 @@
 (function () {
   const themeSelector = document.getElementById("themeSelector");
-  const currentTheme = document.getElementById("currentTheme");
   const themeOptions = document.getElementById("themeOptions");
   const root = document.querySelector("html");
 
@@ -11,7 +10,6 @@
       window.localStorage.setItem("theme", newTheme);
       root.className = newTheme;
       const selectedColor = event.target.getAttribute("data-color");
-      currentTheme.style.backgroundColor = selectedColor;
     };
   }
 

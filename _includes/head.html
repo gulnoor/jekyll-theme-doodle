@@ -33,17 +33,12 @@
     };
     const root = document.querySelector("html");
     const theme = window.localStorage.getItem("theme");
-
     if (theme === null) {
-      theme = "dark-pink";
+      const theme = "dark-pink";
       window.localStorage.setItem("theme", theme);
-      root.className = theme;
-      root.style.setProperty("--current-color", colors[theme]);
-    } else {
-      root.className = theme;
-      root.style.setProperty("--current-color", colors[theme]);
     }
-
+    root.className = theme;
+    // root.style.setProperty("--current-color", colors[theme]);
   </script>
   <script src="/assets/theme-assets/js/theme.js" defer></script>
   {%- feed_meta -%} {%- if jekyll.environment == 'production' and
