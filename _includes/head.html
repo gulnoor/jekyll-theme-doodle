@@ -19,26 +19,27 @@
   {%- seo -%} <link rel="stylesheet" href=" {{ "/assets/main.css" | relative_url
   }} " >
   <script>
-    const colors = {
-      "dark-pink": "#f0b3e7",
-      "dark-green": "#b1d18a",
-      "dark-yellow": "#dbc66e",
-      "dark-blue": "#aac7ff",
-      "dark-cyan": "#81d5cd",
-      "light-pink": "#f0b3e7",
-      "light-green": "#b1d18a",
-      "light-yellow": "#dbc66e",
-      "light-blue": "#aac7ff",
-      "light-cyan": "#81d5cd",
-    };
-    const root = document.querySelector("html");
-    const theme = window.localStorage.getItem("theme");
-    if (theme === null) {
-      const theme = "dark-pink";
-      window.localStorage.setItem("theme", theme);
-    }
-    root.className = theme;
-    // root.style.setProperty("--current-color", colors[theme]);
+    (function () {
+      const colors = {
+        "dark-pink": "#f0b3e7",
+        "dark-green": "#b1d18a",
+        "dark-yellow": "#dbc66e",
+        "dark-blue": "#aac7ff",
+        "dark-cyan": "#81d5cd",
+        "light-pink": "#f0b3e7",
+        "light-green": "#b1d18a",
+        "light-yellow": "#dbc66e",
+        "light-blue": "#aac7ff",
+        "light-cyan": "#81d5cd",
+      };
+      const root = document.querySelector("html");
+      const theme = window.localStorage.getItem("theme");
+      if (theme === null || !(theme in colors)) {
+        const theme = "dark-pink";
+        window.localStorage.setItem("theme", theme);
+      }
+      root.className = theme;
+    })();
   </script>
   <script src="/assets/theme-assets/js/theme.js" defer></script>
   {%- feed_meta -%} {%- if jekyll.environment == 'production' and
