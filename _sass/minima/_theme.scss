@@ -307,6 +307,7 @@
   --md-sys-color-surface-container-highest: rgb(58 51 56);
 }
 .light-pink {
+  --light-filter: invert(93%) hue-rotate(180deg);
   --md-sys-color-primary: rgb(127 77 122);
   --md-sys-color-surface-tint: rgb(127 77 122);
   --md-sys-color-on-primary: rgb(255 255 255);
@@ -362,6 +363,7 @@
     saturate(228%) hue-rotate(270deg) brightness(93%) contrast(82%);
 }
 .light-green {
+  --light-filter: invert(93%) hue-rotate(180deg);
   --md-sys-color-primary: rgb(75 102 44);
   --md-sys-color-surface-tint: rgb(75 102 44);
   --md-sys-color-on-primary: rgb(255 255 255);
@@ -417,6 +419,7 @@
   --md-sys-color-surface-container-highest: rgb(226 227 216);
 }
 .light-yellow {
+  --light-filter: invert(93%) hue-rotate(180deg);
   --md-sys-color-primary: rgb(109 94 15);
   --md-sys-color-surface-tint: rgb(109 94 15);
   --md-sys-color-on-primary: rgb(255 255 255);
@@ -472,6 +475,7 @@
   --md-sys-color-surface-container-highest: rgb(232 226 212);
 }
 .light-blue {
+  --light-filter: invert(93%) hue-rotate(180deg);
   --md-sys-color-primary: rgb(65 95 145);
   --md-sys-color-surface-tint: rgb(65 95 145);
   --md-sys-color-on-primary: rgb(255 255 255);
@@ -527,6 +531,7 @@
     saturate(424%) hue-rotate(192deg) brightness(92%) contrast(92%);
 }
 .light-cyan {
+  --light-filter: invert(93%) hue-rotate(180deg);
   --md-sys-color-primary: rgb(0 106 100);
   --md-sys-color-surface-tint: rgb(0 106 100);
   --md-sys-color-on-primary: rgb(255 255 255);
