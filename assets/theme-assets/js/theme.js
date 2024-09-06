@@ -2,6 +2,7 @@
   const themeSelector = document.getElementById("themeSelector");
   const themeOptions = document.getElementById("themeOptions");
   const root = document.querySelector("html");
+  const theme = root.className;
 
   function clickHandler(color) {
     return (event) => {
