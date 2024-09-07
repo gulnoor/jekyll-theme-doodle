@@ -10,7 +10,6 @@
       const newTheme = `${mode}-${color.split("-")[1]}`;
       window.localStorage.setItem("theme", newTheme);
       root.className = newTheme;
-      const selectedColor = event.target.getAttribute("data-color");
     };
   }
 
@@ -29,7 +28,6 @@
   });
 
   const darkModeToggle = document.getElementById("darkModeToggle");
-
   darkModeToggle.checked = theme.startsWith("dark") ? true : false;
   darkModeToggle.addEventListener("change", () => {
     let activeMode = root.className;

@@ -33,9 +33,9 @@
         "light-cyan": "#81d5cd",
       };
       const root = document.querySelector("html");
-      const theme = window.localStorage.getItem("theme");
+      let theme = window.localStorage.getItem("theme");
       if (theme === null || !(theme in colors)) {
-        const theme = "dark-pink";
+        theme = "dark-pink";
         window.localStorage.setItem("theme", theme);
       }
       root.className = theme;

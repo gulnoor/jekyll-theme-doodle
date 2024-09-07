@@ -112,7 +112,6 @@ To add a tagline/description below the site title, add a tagline property to \_c
 tagline: "Your awesome tagline"
 ```
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
 ### Google analytics
 
@@ -137,6 +136,8 @@ icon: "/assets/icons/about.svg"
 
 - [ ] Add support for comments
 - [ ] Search functionality
+- [ ] automatic table of contents generation (button in mobile view/ sidebar in desktop view)
+
 
 ## Contributing
 
