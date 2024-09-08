@@ -1,4 +1,4 @@
-# Doodle: A [Jekyll](https://jekyllrb.com/) theme for playful and creative aesthetic
+# Doodle: A [Jekyll](https://jekyllrb.com/) blog theme for a playful and creative aesthetic
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@
   - [Add tagline in header](#add-tagline-in-header)
   - [Google analytics](#google-analytics)
   - [Adding icons to naviagtion links](#adding-icons-to-naviagtion-links)
+  - [Setting default color scheme](#set-default-color-scheme)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -104,6 +105,16 @@ status: pinned
 <!-- post content -->
 ```
 
+### Set default color scheme
+
+add the color_scheme property to \_config.yml. in the format `[light/dark]-[color]` e.g.
+
+```yaml
+color_scheme: light-green
+```
+
+following colors are available: green, blue, pink, yellow, cyan
+
 ### Add tagline in header
 
 To add a tagline/description below the site title, add a tagline property to \_config.yml
@@ -112,15 +123,16 @@ To add a tagline/description below the site title, add a tagline property to \_c
 tagline: "Your awesome tagline"
 ```
 
-
 ### Google analytics
 
-add your google analytics tracking id to \_config.yml
+just add your google analytics tracking id to \_config.yml
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N
 ```
+
 ### Adding icons to naviagtion links
+
 add the icon path to the page front matter e.g
 
 ```yaml
@@ -137,7 +149,6 @@ icon: "/assets/icons/about.svg"
 - [ ] Add support for comments
 - [ ] Search functionality
 - [ ] automatic table of contents generation (button in mobile view/ sidebar in desktop view)
-
 
 ## Contributing
 
