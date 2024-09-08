@@ -1,0 +1,41 @@
+#toc {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  @media screen and (min-width: 1440px) {
+    position: fixed;
+    right: 12px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 1230px);
+
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+.toc {
+  list-style-type: none;
+  margin-left: 8px;
+  a {
+    color: var(--md-sys-color-tertiary);
+  }
+}
+.toc-H1 {
+  font-size: 17px;
+}
+
+.toc-H2 {
+  padding-left: 14px;
+  font-size: 16px;
+}
+.toc-H3 {
+  padding-left: 30px;
+  font-size: 16px;
+}

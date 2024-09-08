@@ -17,9 +17,9 @@
 
 ## Features
 
-- dark mode
-- 5 color schemes
-- pinned posts
+- automatic table of contents generation
+- dark mode with 5 color schemes
+- pinned/featured posts at top of home page
 - handwriting fonts
 - google analytics support
 

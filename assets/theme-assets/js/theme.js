@@ -39,4 +39,33 @@
     root.className = activeMode;
     window.localStorage.setItem("theme", activeMode);
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.getElementById("toc");
+    if (toc) {
+      const content = document.querySelector(".post");
+      const headings = content.querySelectorAll("h1, h2, h3");
+
+      const ul = document.createElement("ul");
+      ul.className = "toc";
+
+      if (headings.length > 0) {
+        const title = document.createElement("h3");
+        title.innerText = "Table of contents";
+        toc.appendChild(title);
+
+        headings.forEach((heading) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = "#" + heading.id;
+          a.textContent = heading.textContent;
+          li.appendChild(a);
+          li.className = `toc-${heading.tagName}`;
+          ul.appendChild(li);
+        });
+
+        toc.appendChild(ul);
+      }
+    }
+  });
 })();

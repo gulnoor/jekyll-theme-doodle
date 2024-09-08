@@ -36,6 +36,9 @@
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
+  @include media-query($on-palm) {
+    margin: 12px;
+  }
 }
 .post {
   background: var(--md-sys-color-surface);
