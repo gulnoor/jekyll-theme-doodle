@@ -49,7 +49,7 @@
       const ul = document.createElement("ul");
       ul.className = "toc";
 
-      if (headings.length > 0) {
+      if (headings.length > 1) {
         const title = document.createElement("h3");
         title.innerText = "Table of contents";
         toc.appendChild(title);
