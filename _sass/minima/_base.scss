@@ -143,44 +143,24 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: var(--md-sys-color-primary);
-  border-left: 3px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  margin-left: 12px;
-  margin-right: 12px;
+  background-color: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+  padding: $spacing-unit;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 16px;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
 
   > :last-child {
     margin-bottom: 0;
   }
-}
-
-/**
- * Code formatting
- */
-pre,
-code {
-  @include relative-font-size(0.9375);
-  border: 1px solid var(--md-sys-color-outline);
-  border-radius: 3px;
-  background-color: var(--md-sys-color-surface-container-high);
-}
-
-code {
-  padding: 1px 5px;
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
+  > p {
+    text-align: left;
   }
 }
+
+
 
 /**
  * Wrapper

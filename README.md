@@ -149,6 +149,7 @@ icon: "/assets/icons/about.svg"
 - [ ] Add support for comments
 - [ ] Search functionality
 - [ ] automatic table of contents generation (button in mobile view/ sidebar in desktop view)
+- [ ] scroll progress indicator
 
 ## Contributing
 
