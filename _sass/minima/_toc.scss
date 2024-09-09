@@ -15,9 +15,13 @@
     align-items: center;
     justify-content: center;
     width: calc(100vw - 1230px);
-
     height: 100vh;
     overflow-y: scroll;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 .toc {

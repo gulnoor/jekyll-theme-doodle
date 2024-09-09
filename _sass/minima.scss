@@ -45,7 +45,7 @@ $on-laptop: 800px !default;
 }
 
 // Import partials.
-@import "minima/fonts", "minima/theme", "minima/base", "minima/header",
+@import "minima/fonts", "minima/theme", "minima/base", "minima/header","minima/blockquotes",
   "minima/page", "minima/posts","minima/toc", "minima/syntax-highlighting",
   "minima/navigation-bar", "minima/pinned-post", "minima/theme-selector",
   "minima/footer";

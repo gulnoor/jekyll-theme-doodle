@@ -1,0 +1,28 @@
+blockquote {
+    // display: flex;
+  background-color: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+//   border: 1px solid var(--md-sys-color-on-tertiary-container);
+  border-left: 6px solid var(--md-sys-color-on-tertiary-container);
+  padding: $spacing-unit;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  svg{
+    margin-right: 4px;
+    flex-shrink: 0;
+    float: left;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+  > p {
+    text-align: left;
+  }
+  &.warning {
+    background-color: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+    border-color: var(--md-sys-color-on-error-container);
+  }
+}

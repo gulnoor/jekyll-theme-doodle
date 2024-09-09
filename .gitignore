@@ -1,3 +1,4 @@
+node_modules
 *.gem
 .bundle
 .jekyll-cache
@@ -12,3 +13,5 @@ assets/fonts/*
 Page2.md
 _posts
 .obsidian
+package.json
+package-lock.json

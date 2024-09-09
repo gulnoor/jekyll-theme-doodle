@@ -140,29 +140,6 @@ a {
 }
 
 /**
- * Blockquotes
- */
-blockquote {
-  background-color: var(--md-sys-color-tertiary-container);
-  color: var(--md-sys-color-on-tertiary-container);
-  padding: $spacing-unit;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 16px;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-  > p {
-    text-align: left;
-  }
-}
-
-
-
-/**
  * Wrapper
  */
 .wrapper {
@@ -282,4 +259,14 @@ h1 {
 main {
   overflow: hidden;
   animation: mainreveal 0.25s;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--md-sys-color-on-primary);
+  background: var(--md-sys-color-primary);
+}
+
+::selection {
+  color: var(--md-sys-color-on-primary);
+  background: var(--md-sys-color-primary);
 }
