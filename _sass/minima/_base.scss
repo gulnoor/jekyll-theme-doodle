@@ -121,9 +121,9 @@ a {
   color: var(--md-sys-color-primary);
   text-decoration: none;
 
-  &:visited {
-    // color: var(--md-sys-color-inverse-primary);
-  }
+  // &:visited {
+  // color: var(--md-sys-color-inverse-primary);
+  // }
 
   &:hover {
     color: $text-color;
@@ -268,5 +268,25 @@ main {
 
 ::selection {
   color: var(--md-sys-color-on-primary);
+  background: var(--md-sys-color-primary);
+}
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-sys-color-surface-container);
+}
+
+::-webkit-scrollbar-thumb {
+  // background: rgba(136, 136, 136, 0.4);
+  background: var(--md-sys-color-secondary);
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  // background: rgba(136, 136, 136, 0.7);
   background: var(--md-sys-color-primary);
 }
